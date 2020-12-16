@@ -6,7 +6,7 @@ function generatePassword() {
   while (!(pLength >= 8 && pLength <= 128)) {
     pLength = prompt("Error: invalid length. Please enter a number between 8 and 128");
   }
-  // Creating an array of objects used to refer to each character type for the password, and whether or not they are required.
+  // Creating an array of objects used to refer to each character type for the password, whether or not they are required and whether or not they have been used.
   var charTypes = [
     { type: "lowercase letter", req: true, used: false },
     { type: "uppercase letter", req: true, used: false },
